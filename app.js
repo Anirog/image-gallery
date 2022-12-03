@@ -6,14 +6,14 @@ const selectedIndex = null;
 
 imageIndexes.forEach((i) => {
     const image = document.createElement('img');
-    image.src = `images/cover__episode-${i}.jpg`;
+    image.src = `/images/cover__episode-${i}.jpg`;
     image.alt = `Cover for episode ${i} of the Compressed.fm Podcast`;
     image.classList.add('galleryImg');
 
     image.addEventListener('click', () => {
         // popup stuff
         popup.style.transform = `translateY(0)`;
-        selectedImage.src = `images/cover__episode-${i}.jpg`;
+        selectedImage.src = `/images/cover__episode-${i}.jpg`;
         selectedImage.alt = `Cover for episode ${i} of the Compressed.fm Podcast`;
     });
 
